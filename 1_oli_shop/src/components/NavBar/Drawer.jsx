@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import {
     Divider,
-  Drawer,
-  IconButton,
-  List,
-  ListItem,
-  ListItemText,
-  makeStyles,
+    Drawer,
+    IconButton,
+    List,
+    ListItem,
+    ListItemText,
+    makeStyles,
 } from "@material-ui/core";
 import { Link } from "react-router-dom";
 
@@ -35,25 +35,19 @@ function DrawerComponent() {
         <List>
         <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
-              <Link to="/" className={classes.link}>Home</Link>
+              <Link to="/" className={classes.link}>Ropa</Link>
             </ListItemText>
           </ListItem>
           <Divider/>
           <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
-              <Link to="/about" className={classes.link}>About</Link>
+              <Link to="/about" className={classes.link}>Regalos</Link>
             </ListItemText>
           </ListItem>
           <Divider/>
           <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
-              <Link to="/contact" className={classes.link}>Contact</Link>
-            </ListItemText>
-          </ListItem>
-          <Divider/>
-          <ListItem onClick={() => setOpenDrawer(false)}>
-            <ListItemText>
-              <Link to="/about" className={classes.link}>Faq</Link>
+              <Link to="/contact" className={classes.link}>Accesorios</Link>
             </ListItemText>
           </ListItem>
           <Divider/>

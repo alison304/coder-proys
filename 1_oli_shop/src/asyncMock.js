@@ -9,7 +9,7 @@ const products = [
         description: 'Llavero decorativo'
     },
     {
-        id:'1',
+        id:'2',
         name: 'Blusa rosa',
         price: 100,
         category: 'ropa',
@@ -18,7 +18,7 @@ const products = [
         description: 'Blusa de algodón'
     },
     {
-        id:'1',
+        id:'3',
         name: 'Cojin',
         price: 220,
         category: 'regalos',
@@ -33,5 +33,21 @@ export const getProducts = () => {
         setTimeout(() => {
             resolve(products)
         }), 500
+    })
+}
+
+export const getProductById = (productId) => {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(products.find(prod => prod.id === productId))
+        }, 500)
+    })
+}
+
+export const getProductsByCategory = (categoryId) => {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(categories.find(category => category.id === categoryId))
+        }, 500)
     })
 }
