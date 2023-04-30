@@ -11,6 +11,7 @@ import {
 import { Link, NavLink } from "react-router-dom";
 import CartWidget from '../CartWidget/CartWidget';
 import olishop from '../../assets/img/olishop.png';
+import DrawerComponent from "./Drawer";
 import "./navbar.css";
 
 const useStyles = makeStyles((theme) => ({
@@ -56,7 +57,7 @@ const Navbar = () => {
                         <NavLink to={`/category/accesorios`} className={classes.link}>
                             Accesorios
                         </NavLink>
-                        <NavLink to={`/cart-widget`} className={classes.link}>
+                        <NavLink to={`/cartwidget`} className={classes.link}>
                             <CartWidget />
                         </NavLink>
                     </div>
