@@ -51,7 +51,7 @@ function Navbar() {
                         <NavLink to={`/category/ropa`} className={({isActive}) => isActive?'ActiveOption':'Option'}>
                             Ropa
                         </NavLink>
-                        <NavLink to={`/category/tablet`} className={({isActive}) => isActive?'ActiveOption':'Option'}>
+                        <NavLink to={`/category/regalos`} className={({isActive}) => isActive?'ActiveOption':'Option'}>
                             Regalos
                         </NavLink>
                         <NavLink to={`/category/accesorios`} className={({isActive}) => isActive?'ActiveOption':'Option'}>
